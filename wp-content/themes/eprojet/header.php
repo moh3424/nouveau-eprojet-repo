@@ -13,7 +13,6 @@
 
     <?php 
         wp_head(); // intègre des éléments indispensable à WP, comme les fichiers CSS et SJ inclus dans function.php, ou la barre d'administration en front quand on est connecté tant qu'admin. Cette fonction est obligatoire ici.
-
     ?>
 
 </head>
@@ -22,7 +21,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <div class="row">
+                <div class="row" style="width:100%">
 
                     <div class="navbar-brand col-lg-3">
                         <a href="<?php bloginfo('url');?>"><?php bloginfo('name');?></a><!-- bloginfo('url') fait un echo de l'url du site paramétrée dans BO > réglages > général > url -->

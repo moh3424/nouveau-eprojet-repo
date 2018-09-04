@@ -11,9 +11,9 @@
 
 ?>
 
-        <h2><a href="<?php the_permalink() ;?>"><?php the_title(); ?></a></h2>
+        <h2 class = "col-lg-12"><a href="<?php the_permalink() ;?>"><?php the_title(); ?></a></h2>
 
-        <div class="contenu"><?php the_content() ;?></div>
+        <div class="col-lg-12"><?php the_content() ;?></div>
 
 
 
@@ -24,27 +24,6 @@
             echo '<p> Aucun contenu ne correspond à votre demande...</p>';
         endif;
 ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
