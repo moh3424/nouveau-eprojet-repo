@@ -31,6 +31,13 @@
 
                     <div class="col-lg-12">
                         <!-- ici le menu de navigation -->
+                        <?php 
+                            wp_nav_menu(array( // cette fonction permet d'appeler le menu que nous avons déclaré dans functions.php
+                                'theme_location' => 'primary', //correspond à l'id du menu déclaré dans functions.php
+                                'menu_class'     => 'navbar-nav' // pour ajouter une classe CSS à notre menu
+                            ));
+                        
+                        ?>
                     </div>
 
                 </div><!-- fin .row -->
@@ -45,7 +52,22 @@
 
     </header>
 
-    <!-- ici le bandeau a complété plus tard -->
+    <!-- ici le bandeau  -->
+    <?php 
+        if(is_front_page()) :// si on est sur la page d'accueil, on affiche l'entête avec sa zone de widgets
+    ?>
+    <div id="entete" class="align-items-center">
+        <div class="container">
+            <?php
+                dynamic_sidebar('region-entete');// Appelle la zone de widget d'id "region-entete" déclarée dans function.php
+            ?>
+        </div>
+    
+    </div>
+
+    <?php
+        endif;
+    ?>
 
     <section class="container">
         <div class="row"> <!-- attention : ces 2 balises son fermées dans le fichier footer.php -->
