@@ -70,4 +70,4 @@
     ?>
 
     <section class="container">
-        <div class="row"> <!-- attention : ces 2 balises son fermées dans le fichier footer.php -->
+        <div class="row mb-5"> <!-- attention : ces 2 balises son fermées dans le fichier footer.php -->

@@ -10,7 +10,7 @@ function eprojet_init_sidebar(){// notre fonction qui contient la déclaration d
 
     register_sidebar(array(
         'name'=>'colonne de droite', // nom qui apparaît dans le BO (back-office)
-        'id'  => 'colonne-droite', // identifiant unique de la zone pour pouvoir l'appelr dans un template
+        'id'  => 'colonne-droite', // identifiant unique de la zone pour pouvoir l'appeler dans un template
         'description' => 'Cette zone de widget est dans la barre latérale de droite'// description qui apparaît dans le BO
     ));
     register_sidebar(array(
